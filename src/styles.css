@@ -6,3 +6,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply underline text-[#0147FF];
+}
+
+.rotate {
+  @apply rotate-180;
+}
