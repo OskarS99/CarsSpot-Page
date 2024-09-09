@@ -5,53 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="public/styles.css" rel="stylesheet">
+    <script defer type="module" src="index.js"></script>
     <title>CarsSpot</title>
 </head>
 
 <body>
+
+
+
     <nav>
-        <div class="flex justify-between items-center my-[16px] mx-[120px]">
-            <img src=" src/images/logo.png" alt="logo">
-            <ul class="flex  gap-[24px]">
-                <li class="font-normal font-robotoFlex text-base"><a href="#galery">Galeria zdjęć</a></li>
-                <li class="font-normal font-robotoFlex text-base"><a href="#faq">FaQ</a></li>
+        <div
+            class="flex gap-3 mx-3 my-3 sm:flex justify-between items-center sm:mx-6 md:mx-11 md:my-3 lg:my-[16px] lg:mx-16 xl:mx-[120px]">
+            <img src=" src/images/logo.png" alt="logo" class="self-center">
+            <ul class="  justify-self-center  flex gap-[24px] sm:order-none">
+                <li class="font-normal font-robotoFlex text-sm sm:text-base"><a href="#galery">Galeria zdjęć</a></li>
+                <li class="font-normal font-robotoFlex text-sm sm:text-base"><a href="#faq">FaQ</a></li>
             </ul>
-            <button class="bg-[#0147FF] px-[24px] py-[12px] rounded-lg">
-                <span class="text-white font-robotoFlex font-semibold text-[15px] leading-[22.5px]
-             tracking-[-2%]"><a href="tel:111222333">Zadzwoń do nas</a></span>
+            <button class=" bg-[#0147FF] px-[24px] py-[12px] rounded-lg">
+                <span
+                    class="text-white font-robotoFlex font-semibold leading-[22.5px] tracking-[-2%] text-sm md:text-[15px] "><a
+                        href="tel:111222333">Zadzwoń do nas</a></span>
             </button>
         </div>
     </nav>
 
-    <section>
-        <div class="py-[120px] px-[120px] h-[825px]">
 
-            <img src="src/images/road.png" alt="road" class="absolute top-0 right-[71.95px] z-[-1] ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <div class="p-3 sm:p-6 md:p-10 lg:p-16 lg:h-[700px] xl:py-[120px] xl:px-[120px] xl:h-[825px]">
+
+            <img src="src/images/road.png" alt="road"
+                class="absolute top-0   md:-right-24  lg:right-0 xl:right-[71.95px] z-[-1] ">
             <div>
                 <h1
-                    class="flex flex-col font-bebasNeue font-normal text-[76.28px] leading-[83.92px] tracking-[-0.04em] text-[#282828] mb-6">
+                    class="flex flex-col font-bebasNeue font-normal text-[#282828]  tracking-[-0.04em] text-4xl mb-2 sm:text-6xl sm:mb-4  md:text-[76.28px] md:leading-[83.92px]  md:mb-6">
                     SPRZEDAJEMY SAMOCHODY <span>Z EUROPY</span>
                 </h1>
-                <p class="flex flex-col font-robotoCondensed font-normal text-[16px] leading-6 mb-12">Kup komfortowy
+                <p
+                    class="flex flex-col font-robotoCondensed font-normal text-sm mb-5 sm:text-base sm:mb-7 md:text-[16px] md:leading-6 md:mb-12">
+                    Kup
+                    komfortowy
                     pojazd, aby każda
                     podróż <span> była wyjątkowym przeżyciem.</span>
                 <p>
-                <div class=" flex gap-6">
-                    <button class=" bg-[#0147FF] px-[24px] py-[12px] rounded-lg text-white font-robotoFlex font-semibold text-[15px] leading-[22.5px]
-                    tracking-[-2%]">Zobacz
+                <div class="flex gap-6 mb-5">
+                    <button class=" bg-[#0147FF] px-[24px] py-[12px] rounded-lg text-white font-robotoFlex font-semibold  leading-[22.5px] tracking-[-2%] text-sm md:text-[15px]
+                   ">Zobacz
                         zdjęcia</button>
-                    <button class=" px-[24px] py-[12px]  border border-[#0147FF] rounded-lg text-[#0147FF] font-robotoFlex font-semibold text-[15px] leading-[22.5px]
-                        tracking-[-2%]">Zadzwoń
-                        do
-                        nas</button>
+                    <button class="text-[#0147FF] px-[24px] py-[12px]  border border-[#0147FF] rounded-lg  font-robotoFlex font-semibold leading-[22.5px]
+                        tracking-[-2%] text-sm md:text-[15px] "><a href="tel:111222333">Zadzwoń do
+                            nas</a>
+                    </button>
                 </div>
             </div>
-            <img src="src/images/cars.png" alt="cars" class="absolute right-0 top-[407px]">
+            <img src="src/images/cars.png" alt="cars"
+                class="ml-4  md:ml-12   lg:right-0 lg:absolute lg:max-w-[900px] lg:top-[407px] xl:max-w-full">
         </div>
     </section>
 
 
-    </section>
 
 
 
@@ -63,52 +87,132 @@
 
 
 
-
-
-    <!-- seo-->
-    <section id=" faq">
-        <div class="bg-[#282828] py-[88px] px-[120px] flex justify-between gap-[48px]">
-            <div class="text-white ">
-                <h1 class="font-bebasNeue font-normal text-[25px] leading-[37.5px] tracking-[-3%s] mb-[16px]">
-                    Id nostrud
-                    enim
-                    esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h1>
-                <p class="font-robotoCondensed font-normal text-[14px] leading-[21px] mb-[24px]">Mauris
-                    varius ipsum
-                    mauris,
-                    rutrum lobortis magna efficitur a. Donec egestas, nisl
-                    vehicula feugiat
-                    ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
-                </p>
-                <button class="flex gap-[6px] items-center border-b-[1.5px] pb-[6px]">
-                    <span class="font-robotoCondensed font-normal text-[14px] leading-[21px]">Rozwiń</span>
-                    <img src="src/images/arrow.svg" alt="arrow">
-                </button>
+    <!-- galery-->
+    <section id="galery">
+        <div class="pt-3 px-3 sm:pt-6 sm:px-6 md:pt-10 md:px-10  lg:px-16 lg:pt-16 xl:pt-20 xl:px-[88px] ">
+            <span
+                class="font-robotoCondensed font-normal leading-[32.25px] text-[#0147FF] sm:text-lg md:text-[21.5px]">Prezentacja
+                firmy</span>
+            <h1 class="text-3xl mb-4 font-bebasNeue font-normal leading-[48px] sm:text-4xl md:text-[40px] md:mb-6">
+                ZOBACZ NASZĄ
+                GALERIĘ ZDJĘĆ
+            </h1>
+            <div class="flex gap-6 md:gap-12">
+                <button class="active galleryButton text-sm font-robotoFlex ">Samochody osoobowe</button>
+                <button class="galleryButton text-sm font-robotoFlex ">Samochody dostawcze</button>
             </div>
-            <div class="text-white">
-                <h1 class="font-bebasNeue font-normal text-[25px] leading-[37.5px] tracking-[-3%s] mb-[16px]">
-                    Id nostrud
-                    enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h1>
-                <p class="font-robotoCondensed font-normal text-[14px] leading-[21px] mb-[24px]">Mauris
-                    varius ipsum
-                    mauris,
-                    rutrum lobortis magna efficitur a. Donec egestas, nisl
-                    vehicula feugiat
-                    ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
-                </p>
-                <button class="flex gap-[6px] items-center border-b-[1.5px] pb-[6px]">
-                    <span class="font-robotoCondensed font-normal text-[14px] leading-[21px]">Rozwiń</span>
-                    <img src="src/images/arrow.svg" alt="arrow">
-                </button>
+        </div>
+        <div class="p-3 sm:p-6 md:p-10 lg:p-16 xl:py-20 xl:pl-[88px]">
+            <div class="carsGallery flex flex-col gap-4 sm:gap-6 md:gap-8 lg:flex-row lg:gap-16 lg:mb-12">
+                <img src="src/images/car1.png" alt="car1">
+                <img src="src/images/car2.png" alt="car2">
+                <img src="src/images/car3.png" alt="car3">
+            </div>
+            <div class="carsGallery hidden">
+
+            </div>
+            <div class="hidden lg:visible lg:flex lg:gap-[10px] lg:justify-center">
+                <span class="block w-2 h-2 bg-[#F1F1F1] rounded-[50%]"></span>
+                <span class="block w-2 h-2 bg-[#F1F1F1] rounded-[50%]"></span>
+                <span class="block w-2 h-2 bg-[#F1F1F1] rounded-[50%]"></span>
+                <span class="block w-2 h-2 bg-[#F1F1F1] rounded-[50%]"></span>
+                <span class="block w-2 h-2 bg-[#F1F1F1] rounded-[50%]"></span>
             </div>
         </div>
 
-    </section>
 
-    <footer class="bg-[#282828] border-t-[1px] flex justify-between px-[120px] py-[24px]">
-        <p class="text-white font-robotoCondensed font-bold text-base">Cars Spot</p>
-        <p class="text-white font-robotoCondensed font-normal text-base underline ">Polityka Prywatności</p>
-    </footer>
+
+
+
+
+
+
+
+
+
+        <!-- seo-->
+        <section id="faq">
+            <div
+                class="bg-[#282828] flex flex-col gap-6 p-3 sm:gap-8 sm:p-6  md:p-10 lg:flex-row lg:justify-between lg:gap-[48px]  lg:p-16 xl:py-[88px] xl:px-[120px]">
+                <div class="text-white flex-1 ">
+                    <h1
+                        class="font-bebasNeue font-normal  leading-[37.5px] tracking-[-3%s] mb-[16px]  text-xl sm:text-[25px]">
+                        Id nostrud
+                        enim
+                        esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h1>
+                    <p
+                        class="expandText flex flex-col font-robotoCondensed font-normal text-[14px] leading-[21px] mb-[24px] h-[42px] overflow-hidden">
+                        Mauris
+                        varius ipsum
+                        mauris,
+                        rutrum lobortis magna efficitur a. Donec egestas, nisl
+                        vehicula feugiat
+                        ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                        <span>
+                            Mauris
+                            varius ipsum
+                            mauris,
+                            rutrum lobortis magna efficitur a. Donec egestas, nisl
+                            vehicula feugiat
+                            ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                        </span>
+                    </p>
+                    <button
+                        class="expandButton font-robotoCondensed font-normal text-[14px] leading-[21px] flex gap-[6px] items-center border-b-[1.5px] pb-[6px]">
+                        <span class="">Rozwiń</span>
+                        <img src="src/images/arrow.svg" alt="arrow">
+                    </button>
+                </div>
+                <div class="text-white flex-1">
+                    <h1
+                        class="font-bebasNeue font-normal   text-xl sm:text-[25px] leading-[37.5px] tracking-[-3%s] mb-[16px]">
+                        Id nostrud
+                        enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h1>
+                    <p
+                        class="flex flex-col expandText font-robotoCondensed font-normal text-[14px] leading-[21px] mb-[24px] h-[42px] overflow-hidden">
+                        Mauris
+                        varius ipsum
+                        mauris,
+                        rutrum lobortis magna efficitur a. Donec egestas, nisl
+                        vehicula feugiat
+                        ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                        <span>
+                            Mauris
+                            varius ipsum
+                            mauris,
+                            rutrum lobortis magna efficitur a. Donec egestas, nisl
+                            vehicula feugiat
+                            ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                            Mauris
+                            varius ipsum
+                            mauris,
+                            rutrum lobortis magna efficitur a. Donec egestas, nisl
+                            vehicula feugiat
+                            ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                            Mauris
+                            varius ipsum
+                            mauris,
+                            rutrum lobortis magna efficitur a. Donec egestas, nisl
+                            vehicula feugiat
+                            ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                        </span>
+                    </p>
+                    <button
+                        class="expandButton font-robotoCondensed font-normal text-[14px] leading-[21px] flex gap-[6px] items-center border-b-[1.5px] pb-[6px]">
+                        <span class="">Rozwiń</span>
+                        <img src="src/images/arrow.svg" alt="arrow">
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <footer
+            class="bg-[#282828] border-t-[1px] flex justify-between p-3 sm:px-6  md:px-10 md:py-5  lg:px-16 lg:py-5 xl:px-[120px] xl:py-[24px]">
+            <p class="text-white font-robotoCondensed font-bold text-sm sm:text-base">Cars Spot</p>
+            <p class="text-white font-robotoCondensed font-normal underline text-sm sm:text-base  ">Polityka Prywatności
+            </p>
+        </footer>
 </body>
 
 </html>
