@@ -14,3 +14,7 @@
 .rotate {
   @apply rotate-180;
 }
+
+.activeDot {
+  @apply bg-[#0147FF];
+}
