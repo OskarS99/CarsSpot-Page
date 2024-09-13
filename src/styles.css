@@ -18,3 +18,19 @@
 .activeDot {
   @apply bg-[#0147FF];
 }
+
+.expandButton {
+  @apply flex gap-[6px] items-center border-b-[1.5px] pb-[6px] font-robotoCondensed font-normal text-xs xs:text-[14px] xs:leading-[21px];
+}
+
+.dot {
+  @apply w-2 h-2 bg-[#F1F1F1] rounded-[50%];
+}
+
+.blueButton {
+  @apply bg-[#0147FF] px-[24px] py-[12px] rounded-lg text-white font-robotoFlex font-semibold tracking-[-2%] text-xs xs:text-sm md:text-[15px] md:leading-[22.5px];
+}
+
+.whiteButton {
+  @apply text-[#0147FF] px-[24px] py-[12px] border border-[#0147FF] rounded-lg font-robotoFlex font-semibold tracking-[-2%] text-xs xs:text-sm md:text-[15px] md:leading-[22.5px];
+}

@@ -1223,10 +1223,6 @@ input:checked + .toggle-bg{
   display: none;
 }
 
-.h-2{
-  height: 0.5rem;
-}
-
 .h-4{
   height: 1rem;
 }
@@ -1239,20 +1235,12 @@ input:checked + .toggle-bg{
   height: 2.25rem;
 }
 
-.h-\[42px\]{
-  height: 42px;
-}
-
 .h-\[fit\]{
   height: fit;
 }
 
 .w-1\/2{
   width: 50%;
-}
-
-.w-2{
-  width: 0.5rem;
 }
 
 .w-4{
@@ -1385,10 +1373,6 @@ input:checked + .toggle-bg{
   gap: 24px;
 }
 
-.gap-\[6px\]{
-  gap: 6px;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1411,16 +1395,8 @@ input:checked + .toggle-bg{
   scroll-behavior: smooth;
 }
 
-.whitespace-nowrap{
-  white-space: nowrap;
-}
-
 .text-nowrap{
   text-wrap: nowrap;
-}
-
-.rounded-\[50\%\]{
-  border-radius: 50%;
 }
 
 .rounded-lg{
@@ -1453,10 +1429,6 @@ input:checked + .toggle-bg{
 
 .border-0{
   border-width: 0px;
-}
-
-.border-b-\[1\.5px\]{
-  border-bottom-width: 1.5px;
 }
 
 .border-t-\[1px\]{
@@ -1493,19 +1465,9 @@ input:checked + .toggle-bg{
   background-color: rgb(249 250 251 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-\[\#0147FF\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 71 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#282828\]{
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#F1F1F1\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 241 241 / var(--tw-bg-opacity));
 }
 
 .bg-blue-700{
@@ -1597,10 +1559,6 @@ input:checked + .toggle-bg{
   padding-bottom: 12px;
 }
 
-.pb-\[6px\]{
-  padding-bottom: 6px;
-}
-
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -1625,22 +1583,14 @@ input:checked + .toggle-bg{
   font-family: Roboto Flex, sans-serif;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-\[14px\]{
-  font-size: 14px;
-}
-
-.text-\[15px\]{
-  font-size: 15px;
 }
 
 .text-lg{
@@ -1661,36 +1611,6 @@ input:checked + .toggle-bg{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-\[28px\]{
-  font-size: 28px;
-}
-
-.text-\[30px\]{
-  font-size: 30px;
-}
-
-.text-\[32px\]{
-  font-size: 32px;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
-}
-
-.text-\[24px\]{
-  font-size: 24px;
 }
 
 .font-bold{
@@ -1721,30 +1641,6 @@ input:checked + .toggle-bg{
   line-height: 2.25rem;
 }
 
-.leading-\[21px\]{
-  line-height: 21px;
-}
-
-.leading-\[22\.5px\]{
-  line-height: 22.5px;
-}
-
-.leading-\[32\.25px\]{
-  line-height: 32.25px;
-}
-
-.leading-\[37\.5px\]{
-  line-height: 37.5px;
-}
-
-.leading-\[48px\]{
-  line-height: 48px;
-}
-
-.leading-\[83\.92px\]{
-  line-height: 83.92px;
-}
-
 .tracking-\[-2\%\]{
   letter-spacing: -2%;
 }
@@ -1755,10 +1651,6 @@ input:checked + .toggle-bg{
 
 .tracking-\[-4\%\]{
   letter-spacing: -4%;
-}
-
-.tracking-\[0\]{
-  letter-spacing: 0;
 }
 
 .text-\[\#0147FF\]{
@@ -1877,6 +1769,96 @@ input:checked + .toggle-bg{
 .activeDot{
   --tw-bg-opacity: 1;
   background-color: rgb(1 71 255 / var(--tw-bg-opacity));
+}
+
+.expandButton{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom-width: 1.5px;
+  padding-bottom: 6px;
+  font-family: Roboto Condensed, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+@media (min-width: 370px){
+  .expandButton{
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.dot{
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity));
+}
+
+.blueButton{
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 71 255 / var(--tw-bg-opacity));
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: Roboto Flex, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: -2%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 370px){
+  .blueButton{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px){
+  .blueButton{
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+}
+
+.whiteButton{
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(1 71 255 / var(--tw-border-opacity));
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: Roboto Flex, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: -2%;
+  --tw-text-opacity: 1;
+  color: rgb(1 71 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 370px){
+  .whiteButton{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px){
+  .whiteButton{
+    font-size: 15px;
+    line-height: 22.5px;
+  }
 }
 
 .hover\:border-gray-300:hover{
@@ -2044,14 +2026,22 @@ input:checked + .toggle-bg{
 }
 
 @media (min-width: 370px){
-  .xs\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .xs\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .xs\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .xs\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xs\:text-\[14px\]{
+    font-size: 14px;
+  }
+
+  .xs\:text-\[15px\]{
+    font-size: 15px;
   }
 
   .xs\:text-base{
@@ -2059,25 +2049,17 @@ input:checked + .toggle-bg{
     line-height: 1.5rem;
   }
 
-  .xs\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xs\:text-\[15px\]{
-    font-size: 15px;
-  }
-
-  .xs\:text-\[14px\]{
-    font-size: 14px;
-  }
-
-  .xs\:leading-\[22\.5px\]{
-    line-height: 22.5px;
+  .xs\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .xs\:leading-\[21px\]{
     line-height: 21px;
+  }
+
+  .xs\:leading-\[22\.5px\]{
+    line-height: 22.5px;
   }
 }
 
@@ -2210,10 +2192,6 @@ input:checked + .toggle-bg{
     line-height: 1.75rem;
   }
 
-  .sm\:text-\[15px\]{
-    font-size: 15px;
-  }
-
   .sm\:leading-\[37\.5px\]{
     line-height: 37.5px;
   }
@@ -2306,10 +2284,6 @@ input:checked + .toggle-bg{
     font-size: 76.28px;
   }
 
-  .md\:leading-\[83\.92px\]{
-    line-height: 83.92px;
-  }
-
   .md\:leading-\[22\.5px\]{
     line-height: 22.5px;
   }
@@ -2320,6 +2294,10 @@ input:checked + .toggle-bg{
 
   .md\:leading-\[48px\]{
     line-height: 48px;
+  }
+
+  .md\:leading-\[83\.92px\]{
+    line-height: 83.92px;
   }
 }
 
