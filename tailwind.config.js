@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html', 'index2.html', './node_modules/flowbite/**/*.js'],
+  content: ['index.html', './node_modules/flowbite/**/*.js'],
   theme: {
     extend: {
+      screens: {
+        xs: '370px',
+      },
       fontFamily: {
         robotoCondensed: ['Roboto Condensed', 'sans-serif'],
         bebasNeue: ['Bebas Neue', 'sans-serif'],
