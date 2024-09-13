@@ -1,6 +1,6 @@
 # CarsSpot - webpage
 
-![Page](src/website.png)
+![Page](src/images/website.png)
 
 ## Demo
 [https://oskars99.github.io/webpage-rekinyBiz/](https://oskars99.github.io/webpage-rekinyBiznesu/)
