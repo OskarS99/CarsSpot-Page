@@ -1,11 +1,7 @@
 const buttons = document.querySelectorAll('.galleryButton');
 const cars = document.querySelectorAll('.carsGallery');
-
 const textButtons = document.querySelectorAll('.expandButton');
-const expandTexts = document.querySelectorAll('.expandText');
-
 const carouselButtons = document.querySelectorAll('.carouselButton');
-const carouselContainer = document.querySelector('.carouselContainer');
 let previousIndex = 0;
 
 function toggleContainers(indexToShow) {
@@ -18,15 +14,20 @@ function toggleContainers(indexToShow) {
 
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    document.querySelector('.active')?.classList.remove('active');
-    button.classList.add('active');
+    document
+      .querySelector('.activeContainer')
+      ?.classList.remove('activeContainer');
+    button.classList.add('activeContainer');
     toggleContainers(index);
   });
 });
 
 function toggleExpandTexts(indexToExpand) {
+  const expandTexts = document.querySelectorAll('.expandText');
   expandTexts.forEach((expandText, index) => {
-    index === indexToExpand ? expandText.classList.toggle('h-[42px]') : null;
+    index === indexToExpand
+      ? expandText.querySelector('span').classList.toggle('hidden')
+      : null;
   });
 }
 
@@ -46,8 +47,8 @@ carouselButtons.forEach((carouselButton, index) => {
   carouselButton.addEventListener('click', () => {
     document.querySelector('.activeDot')?.classList.remove('activeDot');
     carouselButton.classList.add('activeDot');
+    const carouselContainer = document.querySelector('.carouselContainer');
     const containerWidth = carouselContainer.clientWidth;
-    console.log(previousIndex);
     cars.forEach((car) => {
       if (index > previousIndex) {
         car.scrollLeft += containerWidth;
@@ -58,6 +59,5 @@ carouselButtons.forEach((carouselButton, index) => {
       }
     });
     previousIndex = index;
-    console.log(previousIndex);
   });
 });
